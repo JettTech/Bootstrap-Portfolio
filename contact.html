@@ -1,63 +1,145 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<title>Lisa Jetton: An Introduction</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<title>Lisa Jetton: Introduction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Linking BOOTSTRAP! -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+	<style>
+	/*WHY MUST I specify the font size here for the font to be enlarged??!!!!*/
+		.page-header {
+			color: #4aaaa5;
+		}
+
+		.navbar-header {
+			margin: 5%;
+		}
+
+		.navbar-brand	{
+			width: 30%;
+			background-color: #4aaaa5;
+			position: absolute;
+			bottom: 5px;
+			font-size: 24px;
+			color: #f8f8f8;
+		}
+
+		.navbar-nav {
+			background-color: #4aaaa5;
+		}
+
+		.navbar-right {
+			position: absolute;
+			bottom: 0px;
+			right: 12%;
+		}
+		
+		.nav>li>a {
+			background-color: #f8f8f8;
+		}
+
+		.nav>li>a:hover {
+			background-color: #4aaaa5;
+		}
+
+		.panel-heading {
+			padding: 0px 15px;
+		}
+
+		.panel-body {
+			padding: 18px;
+		}
+
+		#contactme {
+			margin-bottom: 100px;
+		}
+
+	</style>
+
+<!-- //// -->		
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
 </head>
 <body>
-	<div class="container">
-		<header class="wrapper">
-			<h1 id="header-name"> Lisa Jetton </h1>
-			<nav id="navitems">
-				<ul>
-					<li><a href="index.html"> About </a></li>
-					<li><a href="portfolio.html"> Portfolio </a></li>
-					<li><a href="#"> Contact </a></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="center-area">
-			<div id="main-section">
-				<article id="main-content">
-					<h2>Contact Me</h2>
-					<div id="articleline1"></div>
-					<form>
-						Name:
-						<br/>
-						<input type="text" name="name" placeholder=" John Smith">
-						<br/>
-						<br/>
-						Email:
-						<br/>
-						<input type="email" name="mail" placeholder=" example@gmail.com">
-						<br/>
-						<br/>
-						Subject:
-						<br/>
-						<textarea name="message" rows="20" cols="50" placeholder=" Please write your message here."></textarea>
-						<br/>
-						<br/>
-						<button href="#" type="button" ondblclick="Are you sure you would like to submit?">Submit</button>
-					</form>
-				</article>
-			</div>
-			<aside>
-				<div id="asidecontact">
-					<h3>Connect With Me</h3>
-					<div id="asideline2"></div>
-					<div id="socialimages">
-						<a href="https://github.com/JettTech" target="_blank"><img id="socialimage" src="assets/images/github.img" alt="This is a picture of the github logo." height="50" width="50"/></a>
-						<a href="https://www.linkedin.com/in/lisa-jetton-78026626/" target="_blank"><img id="socialimage" src="assets/images/linkedin.img" alt="This is a picture of the linkedin logo." height="50" width="50"></a>
-						<a href="https://stackoverflow.com/users/7795208/lisa-jetton" target="_blank"><img id="socialimage" src="assets/images/stackoverflow.img" alt="This is a picture of the stackoverflow logo." height="50" width="50"></a>
+<!-- Starting on the Header HERE...!! -->
+	<nav class="navbar navbar-default">
+	    <div class="container">
+	    	<div class="navbar-header">
+	    		<a class="navbar-brand" href="#">Lisa Jetton</a>
+	    	</div>
+	    	<ul class="nav navbar-nav navbar-right">
+	    		<li><a href="#"> About </a></li>
+				<li><a href="portfolio.html"> Portfolio </a></li>
+				<li><a href="contact.html"> Contact </a></li>
+			</ul>
+	    </div>
+	</nav>
+
+<!-- Starting on the Main Content of Page HERE...!! -->
+<div class="container">
+		<div class="row">
+			<div class="col-sm-7 col-md-8">
+				<div class="panel panel-inverse">
+					<div class="page-header">
+						<h1 class="text-center">Contact Me</h1>
+					</div>
+					<div class="panel-body">
+						<article>
+							<form>
+								Name:
+								<br/>
+								<input type="text" name="name" placeholder=" John Smith">
+								<br/>
+								<br/>
+								Email:
+								<br/>
+								<input type="email" name="mail" placeholder=" example@gmail.com">
+								<br/>
+								<br/>
+								Subject:
+								<br/>
+								<textarea name="message" rows="20" cols="50" placeholder=" Please write your message here."></textarea>
+								<br/>
+								<br/>
+								<button href="#" type="button" ondblclick="Are you sure you would like to submit?">Submit</button>
+							</form>
+						</article>
 					</div>
 				</div>
-			</aside>			
+			</div>
+			<div class="col-sm-5 col-md-4" id="contactme">
+				<div class="panel panel-inverse">
+					<div class="panel-heading">
+						<div class="page-header">
+							<h3 class=>Connect With Me</h3>
+						</div>
+					</div>
+					<div class="panel-body">
+						<a href="https://github.com/JettTech" target="_blank"><img class="socialimage" src="assets/images/github.img" alt="This is a picture of the github logo."/></a>
+						<a href="https://www.linkedin.com/in/lisa-jetton-78026626/" target="_blank"><img class="socialimage" src="assets/images/linkedin.img" alt="This is a picture of the linkedin logo."></a>
+						<a href="https://stackoverflow.com/users/7795208/lisa-jetton" target="_blank"><img class="socialimage" src="assets/images/stackoverflow.img" alt="This is a picture of the stackoverflow logo."></a>
+					</div>
+				</div>
+			</div>			
 		</div>
-		<footer id="stickyfooter">
-			<p id="copyright">©Copyright 2017 Lisa Jetton</p>		
-		</footer>
-	</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default navbar-fixed-bottom">
+					<footer class="panel-body">
+							<p class="text-center">©Copyright 2017 Lisa Jetton</p>
+					</footer>
+				</div>
+			</div>
+		</div>		
+	</div>	
+
+<!-- ????????!!!!!DO WE NEED TO INCLUDE THESE YET?????!!!!!! -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

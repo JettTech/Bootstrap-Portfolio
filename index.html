@@ -1,59 +1,141 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<title>Lisa Jetton: An Introduction</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<title>Lisa Jetton: Introduction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Linking BOOTSTRAP! -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+<!-- //// -->
+	<!-- Linking the BootSwatch (Color/Silouheutte/Shape) Theme -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic"/>
+
+	<style>
+	/*WHY MUST I specify the font size here for the font to be enlarged??!!!!*/
+		.page-header {
+			color: #4aaaa5;
+		}
+
+		.navbar-header {
+			margin: 5%;
+		}
+
+		.navbar-brand	{
+			width: 30%;
+			background-color: #4aaaa5;
+			position: absolute;
+			bottom: 5px;
+			font-size: 24px;
+			color: #f8f8f8;
+		}
+
+		.navbar-nav {
+			background-color: #4aaaa5;
+		}
+
+		.navbar-right {
+			position: absolute;
+			bottom: 0px;
+			right: 12%;
+		}
+		
+		.nav>li>a {
+			background-color: #f8f8f8;
+		}
+
+		.nav>li>a:hover {
+			background-color: #4aaaa5;
+		}
+
+		.panel-heading {
+			padding: 0px 15px;
+		}
+
+		.panel-body {
+			padding: 20px;
+		}
+
+		#contactme {
+			margin-bottom: 100px;
+		}
+
+	</style>
+
+<!-- //// -->		
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
 </head>
 <body>
+<!-- Starting on the Header HERE...!! -->
+	<nav class="navbar navbar-default">
+	    <div class="container">
+	    	<div class="navbar-header">
+	    		<a class="navbar-brand" href="#">Lisa Jetton</a>
+	    	</div>
+	    	<ul class="nav navbar-nav navbar-right">
+	    		<li><a href="#"> About </a></li>
+				<li><a href="portfolio.html"> Portfolio </a></li>
+				<li><a href="contact.html"> Contact </a></li>
+			</ul>
+	    </div>
+	</nav>
+
+<!-- Starting on the Main Content of Page HERE...!! -->
 	<div class="container">
-		<header class="wrapper">
-			<h1 id="header-name"> Lisa Jetton </h1>
-			<nav id="navitems">
-				<ul>
-					<li><a href="#"> About </a></li>
-					<li><a href="portfolio.html"> Portfolio </a></li>
-					<li><a href="contact.html"> Contact </a></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="center-area">
-			<div id="main-section">
-				<article id="main-content">
-					<h2>About Me</h2>
-					<div id="articleline1"></div>
-					<div>
-						<img id="profilepic" src="assets/images/aboutme.pic1.png" alt="Profile Picture of me">
+		<div class="row">
+			<div class="col-sm-7 col-md-8">
+				<div class="panel panel-inverse">
+					<div class="page-header">
+						<h1 class="text-center">About Me</h1>
+					</div>
+					<div class="panel-body">
+						<img id="profilepic" src="assets/images/aboutme.pic1.png" alt="Profile Picture of me"/>
 						<p>
 							By the time I was 18, I had lived in 4 states and 2 countries.  Travelling to the unknown, exploring new thoughts, and learning foreign languages are thus inherent aspects of my childhood and continue to be goals for my future.  To date, I speak three languages: English, French, and Spanish.  In my lifetime, I aspire to learn at least five.
 						</p>
 						<br/>
 						<p>
-							I consider coding to be the "international language" of our future, harnessing the power to unite minds and surpass borders.  Technology has proven itself to be a unique blend of both science and art, and I am eager to study the articulation of its parts.  Ultimately, I hope to wield the power of programming for good.  A personal dream I have is to enventually pair my coding skills with my financial background and create an application that advances economy in places rich in talent yet poor in commercial investment.
+							I consider coding to be the "international language" of our future, harnessing the power to unite minds and surpass borders.  Technology has proven itself to be a unique blend of both science and art, and I am eager to study the articulation of its parts.  Ultimately, I hope to wield the power of programming for good.  A personal dream I have is to eventually pair my coding skills with my financial background and create an application that advances economy in places rich in talent yet poor in commercial investment.
 						</p>
 						<br/>
 						<p>
-							I expect this course to act as a continual test of character and mind, yet I also perceive it as a channel for creativity and endless creation.  I am excited to venture through this journey together and welcome the challenge.  Let's do this!
+							I expect this course to act as a continual test of character and mind, yet I also perceive it as a channel for creativity and endless creation.  I am excited to venture through this journey together and welcome the challenge. Let's do this!
 						</p>
 					</div>
-				</article>
+				</div>
 			</div>
-			<aside>
-				<div id="asidecontact">
-					<h3>Connect With Me</h3>
-					<div id="asideline2"></div>
-					<div id="socialimages">
-						<a href="https://github.com/JettTech" target="_blank"><img id="socialimage" src="assets/images/github.img" alt="This is a picture of the github logo." height="50" width="50"/></a>
-						<a href="https://www.linkedin.com/in/lisa-jetton-78026626/" target="_blank"><img id="socialimage" src="assets/images/linkedin.img" alt="This is a picture of the linkedin logo." height="50" width="50"></a>
-						<a href="https://stackoverflow.com/users/7795208/lisa-jetton" target="_blank"><img id="socialimage" src="assets/images/stackoverflow.img" alt="This is a picture of the stackoverflow logo." height="50" width="50"></a>
+			<div class="col-sm-5 col-md-4" id="contactme">
+				<div class="panel panel-inverse">
+					<div class="panel-heading">
+						<div class="page-header">
+							<h3 class=>Connect With Me</h3>
+						</div>
+					</div>
+					<div class="panel-body">
+						<a href="https://github.com/JettTech" target="_blank"><img class="socialimage" src="assets/images/github.img" alt="This is a picture of the github logo."/></a>
+						<a href="https://www.linkedin.com/in/lisa-jetton-78026626/" target="_blank"><img class="socialimage" src="assets/images/linkedin.img" alt="This is a picture of the linkedin logo."></a>
+						<a href="https://stackoverflow.com/users/7795208/lisa-jetton" target="_blank"><img class="socialimage" src="assets/images/stackoverflow.img" alt="This is a picture of the stackoverflow logo."></a>
 					</div>
 				</div>
-			</aside>			
+			</div>			
 		</div>
-	</div>
-	<footer id="stickyfooter">
-		<p id="copyright">©Copyright 2017 Lisa Jetton</p>		
-	</footer>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default navbar-fixed-bottom">
+					<footer class="panel-body">
+							<p class="text-center">©Copyright 2017 Lisa Jetton</p>
+					</footer>
+				</div>
+			</div>
+		</div>		
+	</div>	
+
+<!-- ????????!!!!!DO WE NEED TO INCLUDE THESE YET?????!!!!!! -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
